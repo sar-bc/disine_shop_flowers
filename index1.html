@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <!--CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--font-awesome-->
+    <!-- https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<div class="wrapper">
+
+		 <!--header-->
+         <header class="header">
+            <div class="header-top py-1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="header-top-phone d-flex align-items-center h-100">
+                                
+                                <a href="tel:+9271536733" class="ms-1"><i class="fa-solid fa-phone"></i> 8 (927) 153 6733</a>
+                            </div><!--header-top-phone-->
+                        </div><!--col-->
+                        <div class="col-sm-4 d-none d-sm-block">
+                            <ul class="social-icons d-flex justify-content-center">
+                                <li><a href="#"><i class="fa-brands fa-viber"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            </ul>
+                        
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="header-top-account d-flex justify-content-end">
+                                <button type="button" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Вход</button>
+                            </div>
+                        </div><!--col-->
+                    </div>
+                </div>
+            </div><!--header-top-->
+
+            <div class="header-middle bg-white py-4">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+
+                        <div class="col-sm-6">
+                            <a href="index.html" class="header-logo h1">Цветы для вас</a>
+                        </div>
+
+						<div class="col-sm-6 mt-2 mt-md-0">
+							<form action="">
+								<div class="input-group">
+									<input type="text" class="form-control" name="s" placeholder="Searching..."
+										aria-label="Searching..." aria-describedby="button-search">
+									<button class="btn btn-outline-warning" type="submit" id="button-search">
+										<i class="fa-solid fa-magnifying-glass"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./header-middle -->
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="table-responsive">
+						<table class="table offcanvasCart-table">
+							<tbody>
+								<tr>
+									<td class="product-img-td"><a href="#"><img src="img/products/1.jpg" alt=""></a>
+									</td>
+									<td><a href="#">Product 1 Lorem ipsum dolor, sit amet consectetur adipisicing.</a></td>
+									<td>$65</td>
+									<td>&times;1</td>
+									<td><button class="btn btn-danger"><i class="fa-solid fa-trash"></i></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="product-img-td"><a href="#"><img src="img/products/2.jpg" alt=""></a>
+									</td>
+									<td><a href="#">Product 2</a></td>
+									<td>$80</td>
+									<td>&times;2</td>
+									<td><button class="btn btn-danger"><i class="fa-solid fa-trash"></i></i></button>
+									</td>
+								</tr>
+								<tr>
+									<td class="product-img-td"><a href="#"><img src="img/products/3.jpg" alt=""></a>
+									</td>
+									<td><a href="#">Product 3</a></td>
+									<td>$100</td>
+									<td>&times;1</td>
+									<td><button class="btn btn-danger"><i class="fa-solid fa-trash"></i></i></button>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="4" class="text-end">Total:</td>
+									<td>$325</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+	
+					<div class="text-end mt-3">
+						<a href="#" class="btn btn-outline-warning">Cart</a>
+						<a href="#" class="btn btn-outline-secondary">Checkout</a>
+					</div>
+	
+					<div class="dropdown mt-3">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+							Dropdown button
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item closecart" href="#footer" data-href="footer">Footer</a>
+							</li>
+							<li>
+								<a class="dropdown-item closecart" href="#about" data-href="about">About</a>
+							</li>
+							<li>
+								<a class="dropdown-item closecart" href="#map" data-href="map">Map</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!--offcanvas-->
+
+        </header><!--header end-->
+
+		<div class="header-bottom sticky-top" id="header-nav">
+			<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1"
+						aria-labelledby="offcanvasNavbarLabel">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Каталог</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+								aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav">
+								
+								<li class="nav-item">
+									<a class="nav-link" href="#">Спец предложения</a>
+								</li>
+								
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false" data-bs-auto-close="outside">
+										Цветы
+									</a>
+									<ul class="dropdown-menu ">
+										<li>
+											<a class="dropdown-item" href="#">Все цветы</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Гвоздики</a>
+										</li>
+										
+										<li>
+											<a class="dropdown-item" href="#">Лилии</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Розы</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Ромашки</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="nav-item dropdown"></li>
+									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false" data-bs-auto-close="outside">
+										Композиции
+									</a>
+									<ul class="dropdown-menu dropdown-menu-end">
+										<li>
+											<a class="dropdown-item" href="#">Все Композиции</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Детские</a>
+										</li>
+										
+										<li>
+											<a class="dropdown-item" href="#">Классические</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Сердца</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Экзотические</a>
+										</li>
+									</ul>
+								</li>
+
+
+
+							</ul>
+						</div>
+					</div>
+
+					<div>
+						<a href="#" class="btn p-1">
+							<i class="fa-solid fa-heart"></i>
+							<span class="badge text-bg-warning cart-badge bg-warning rounded-circle">3</span>
+						</a>
+
+						<button class="btn p-1" id="cart-open" type="button" data-bs-toggle="offcanvas2"
+							data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+							<i class="fa-solid fa-cart-shopping"></i>
+							<span class="badge text-bg-warning cart-badge bg-warning rounded-circle">5</span>
+						</button>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+		<!-- ./header-bottom -->
+
+		<main class="main">
+            <!--carusel-->
+			<div id="carousel" class="carousel slide carousel-fade">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/slider/1.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h2>First slide label</h2>
+							<p>Some representative placeholder content for the first slide.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/slider/2.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h2>Second slide label</h2>
+							<p>Some representative placeholder content for the second slide.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/slider/3.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+							<h2>Third slide label</h2>
+							<p>Some representative placeholder content for the third slide.</p>
+						</div>
+					</div>
+					
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div><!--carusel-->
+
+            <!--advantages-->
+			<section class="advantages">
+				<div class="container-fluid">
+					<div class="row mb-5">
+						<div class="col-12">
+							<h2 class="section-title">
+								<span>Наши преимущества</span>
+							</h2>
+						</div>
+					</div>
+
+					<div class="row gy-3 items">
+						<div class="col-lg-3 col-sm-6">
+							<div class="item">
+								<p>
+									<i class="fas fa-shipping-fast"></i>
+								</p>
+								<p>Прямые поставки от производителей брендов</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+							<div class="item">
+								<p>
+									<i class="fas fa-cubes"></i>
+								</p>
+								<p>Широкий ассортимент товаров. Более 10 тыс. наименований</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+							<div class="item">
+								<p>
+									<i class="fas fa-hand-holding-usd"></i>
+								</p>
+								<p>Приятные и конкурентные цены</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+							<div class="item">
+								<p>
+									<i class="fa-solid fa-user-graduate"></i>
+								</p>
+								<p>Консультации от профессионалов</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section><!--advantages-->
+
+            <!--featured-products-->
+			<section class="featured-products">
+				<div class="container-fluid">
+					<div class="row mb-5">
+						<div class="col-12">
+							<h2 class="section-title">
+								<span>Рекомендуемые товары</span>
+							</h2>
+						</div>
+					</div><!--row-->
+
+					<div class="row">
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="img/products/1.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 1 Lorem ipsum dolor, sit amet consectetur
+											adipisicing.</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Placeat, aperiam!</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="img/products/2.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 2</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<!-- <div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div> -->
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="img/products/3.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 3 Lorem ipsum</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											$100
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="img/products/4.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 4</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="img/products/5.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 5 Lorem ipsum dolor, sit amet consectetur
+											adipisicing.</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Placeat, aperiam!</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="img/products/6.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 6</a>
+									</h4>
+									<p class="product-excerpt"></p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="img/products/7.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 7</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+										Placeat, aperiam!</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<div class="product-card">
+								<div class="product-card-offer">
+									<div class="offer-hit">Hit</div>
+									<div class="offer-new">New</div>
+								</div>
+								<div class="product-thumb">
+									<a href="product.html"><img src="img/products/8.jpg" alt=""></a>
+								</div>
+								<div class="product-details">
+									<h4>
+										<a href="products.html">Product 8 Lorem</a>
+									</h4>
+									<p class="product-excerpt">Lorem ipsum dolor</p>
+									<div class="product-bottom-details d-flex justify-content-between">
+										<div class="product-price">
+											<small>$70</small>
+											$65
+										</div>
+										<div class="product-links">
+											<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+													class="fas fa-shopping-cart"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div><!--row-->
+				</div>
+			</section><!--featured-products-->
+
+            <!--new-products-->
+            <section class="new-products">
+				<div class="container-fluid">
+					<div class="row mb-5">
+						<div class="col-12">
+							<h2 class="section-title">
+								<span>Новинки</span>
+							</h2>
+						</div>
+					</div>
+
+					<div class="owl-carousel owl-theme owl-carousel-full">
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="img/products/1.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 1 Lorem ipsum dolor, sit amet consectetur
+										adipisicing.</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Placeat, aperiam!</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="img/products/2.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 2</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<!-- <div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div> -->
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="img/products/3.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 3 Lorem ipsum</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										$100
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="img/products/4.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 4</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="img/products/5.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 5 Lorem ipsum dolor, sit amet consectetur
+										adipisicing.</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Placeat, aperiam!</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="img/products/6.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 6</a>
+								</h4>
+								<p class="product-excerpt"></p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="img/products/7.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 7</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Placeat, aperiam!</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="product-card">
+							<div class="product-card-offer">
+								<div class="offer-hit">Hit</div>
+								<div class="offer-new">New</div>
+							</div>
+							<div class="product-thumb">
+								<a href="product.html"><img src="img/products/8.jpg" alt=""></a>
+							</div>
+							<div class="product-details">
+								<h4>
+									<a href="products.html">Product 8 Lorem</a>
+								</h4>
+								<p class="product-excerpt">Lorem ipsum dolor</p>
+								<div class="product-bottom-details d-flex justify-content-between">
+									<div class="product-price">
+										<small>$70</small>
+										$65
+									</div>
+									<div class="product-links">
+										<a href="#" class="btn btn-outline-secondary add-to-cart"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section><!--new-products-->
+			
+			<!--about-us-->
+			<section class="about-us" id="about">
+				<div class="container fluid">
+					<div class="row mb-5">
+						<div class="col-12">
+							<h2 class="section-title">
+								<span>About Us</span>
+							</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit illo, ex magni
+								odio rem ab a saepe nihil assumenda illum reiciendis quae nemo fuga porro omnis.
+								Nesciunt, nostrum at?</p>
+							<p>Laboriosam, esse dolore incidunt voluptas ea enim quasi laudantium quod ipsum asperiores,
+								labore, similique cum accusamus optio perspiciatis et cumque pariatur est sapiente
+								dolorem repudiandae libero nulla nesciunt rem! Magnam!</p>
+							<p>Voluptatem, maiores dicta? Quod enim temporibus sapiente quisquam optio sed fuga, facilis
+								iusto animi qui, vitae voluptate inventore eveniet nulla eius soluta et magnam eligendi
+								a veniam tenetur laborum saepe.</p>
+						</div>
+					</div>
+				</div>
+			</section><!--about-us-->
+
+			<iframe id="map"
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab83c7beb88012eba8e746939221c40b2d049649c7361add4ef588a39c939286e&amp;source=constructor"
+				width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+		</main>
+		
+        <footer class="footer" id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 col-6">
+						<h4>Information</h4>
+						<ul class="list-unstyled">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Payment</a></li>
+							<li><a href="#">Delivery</a></li>
+							<li><a href="#">Contacts</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-6">
+						<h4>Working hours</h4>
+						<ul class="list-unstyled">
+							<li>Paris, str. Bretan</li>
+							<li>mon-fri: 9:00 - 18:00</li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-6">
+						<h4>Contacts</h4>
+						<ul class="list-unstyled">
+							<li><a href="tel:1234567890">123-456-7890</a></li>
+							<li><a href="tel:0987654321">098-765-4321</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-6">
+						<h4>Follow us</h4>
+						<ul class="footer-icons">
+							<li><a href="#"><i class="fa-brands fa-viber"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div><!--wrapper-->
+    <button id="top">
+		<i class="fa-solid fa-angles-up"></i>
+	</button>
+        <!--========-modal==================-->
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Авторизация</h1> -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active " id="enter-tab" data-bs-toggle="tab" data-bs-target="#enter"
+                                type="button" role="tab" aria-controls="enter" aria-selected="true">Вход
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register"
+                                type="button" role="tab" aria-controls="register" aria-selected="false">Регистрация
+                        </button>
+                    </li>
+
+                </ul>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="enter" role="tabpanel" aria-labelledby="enter-tab">
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="alert alert-danger d-none" role="alert"></div>
+                            <form action="#" method="post" id="form_login">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="email_enter" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email_enter" placeholder="name@example.com">
+                                </div><!--col-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="password">
+                                        <label for="password_enter" class="form-label">Пароль</label>
+                                    <input type="password" class="form-control" id="password_enter">
+
+                                    </div><!--password-->
+                                </div><!--col-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col">
+                                    <label>
+                                        <input type='checkbox' id="show_pass_enter"> <label for="show_pass_enter">Показать
+                                        пароль</label>
+                                    </label>
+                                </div><!--col-->
+                            </div><!--row-->
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#">Забыли пароль?</a>
+                                </div><!--col-->
+                            </div><!--row-->
+                        </div><!--container-->
+                    </div><!--modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-warning">Войти</button>
+                        </form>
+                    </div><!--modal footer-->
+                </div><!--enter tab-->
+
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                    <div class="modal-body">
+
+                        <form action="#" method="post" id="form_reg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="alert alert-danger d-none error_username" role="alert"></div>
+                                        <label for="email_reg" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="username_reg" placeholder="name@example.com">
+
+                                    </div><!--col-->
+                                </div><!--row-->
+                               
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="alert alert-danger d-none error_phone" role="alert"></div>
+                                        <label for="phone_reg" class="form-label">Телефон</label>
+                                        <input type="phone" class="form-control" id="phone_reg">
+
+                                    </div><!--col-->
+                                </div><!--row-->
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="alert alert-danger d-none error_password2" role="alert"></div>
+                                        <div class="password">
+                                        <label for="password1_reg" class="form-label">Пароль</label>
+                                        <input type="password" class="form-control" id="password1_reg">
+                                        </div><!--password-->
+                                    </div><!--col-->
+                                </div><!--row-->
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="password">
+                                            <label for="password2_reg" class="form-label">Повторите пароль</label>
+                                            <input type="password" class="form-control" id="password2_reg">
+                                        </div><!--password-->
+                                    </div><!--col-->
+                                </div><!--row-->
+
+                                <div class="row">
+                                    <div class="col">
+                                        <lable>
+                                            <input type='checkbox' id="show_pass_reg"> <label for="show_pass_reg">Показать
+                                            пароль</label>
+                                        </lable>
+                                    </div><!--col-->
+                                </div><!--row-->
+
+                            </div><!--container-->
+
+
+                    </div><!--modal-body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                        <button type="submit" class="btn btn-warning">Регистрация</button>
+                    </div><!--modal footer-->
+                </div><!--register tab-->
+                </form>
+            </div><!--tab-content-->
+
+        </div><!--modal-content-->
+    </div><!--modal-dialog-->
+</div><!--modal-->
+<!--===========MODAL END=====================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
